@@ -16,3 +16,8 @@ RUN \
 
 # Copy local files
 COPY root/ /
+
+# Expose ports.
+EXPOSE 80 443
+
+ENTRYPOINT ["/init"]
